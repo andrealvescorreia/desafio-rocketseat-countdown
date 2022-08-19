@@ -5,6 +5,8 @@
     text-decoration: none;
 }
 
+
+
 :root {
     --black: #4D4C59;
     --purple: #6C63FF;
@@ -12,6 +14,7 @@
     --text-color: #9C9AB6;
 
     font-size: 1.15vw;
+    
 }
 
 body{
@@ -19,6 +22,7 @@ body{
     background-color: white;
     
     display: flex;
+    
     
 }
 
@@ -32,6 +36,7 @@ main{
 
 
     margin-top: 11.7rem;
+    
 }
 
 
@@ -50,15 +55,15 @@ h2{
 
     display: flex;
     gap: 1.5rem;
-
+    margin-top: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .countdown-label{
     font-size: 0.87rem;
-    color: var(--light-grey)
+    color: var(--light-grey);
+    
 }
-
 
 
 .number-container{
@@ -107,10 +112,32 @@ button{
    
 }
 
+
+
+@media (max-width: 800px), handheld{
+    :root{
+        font-size: 2vw;
+    }
+    body{
+        flex-direction: column;
+        
+    }
+    main{
+        width: 100%; 
+    }
+    #rocket-img-container{
+        width: 100%;
+    }
+    #rocket-img{
+        margin-top: 10vh;
+    }  
+}
+
 #top-img{
     position: fixed;
     z-index: -1;
     width: 100%;
+    min-width: 800px;
     
 }
 
@@ -120,4 +147,5 @@ button{
     bottom: 0;
     left: 0;
     width: 100%;
+    min-width: 800px;
 }
