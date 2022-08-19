@@ -1,0 +1,80 @@
+* {/* reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+body{
+    font-family: 'Poppins';
+    background-color: white;
+}
+
+main{
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h2{
+    font-size: 2.25rem;
+}
+
+#countdown-time{
+    display: flex;
+    align-items: flex-end;
+    font-size: 4.5rem;
+}
+
+.countdown-label{
+    font-size: 0.87rem;
+}
+
+
+
+.number-container{
+    /*background-color: #4D4C59;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+p{
+    font-size: 0.87rem;
+}
+
+button{
+    font-size: 1rem;
+}
+
+
+#rocket-img{
+    float: right;
+    width: 27.18rem;
+}
+
+#top-img{
+    position: fixed;
+    z-index: -1;
+}
+
+#bottom-img{
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
