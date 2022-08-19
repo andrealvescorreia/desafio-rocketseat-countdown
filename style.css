@@ -10,11 +10,16 @@
     --purple: #6C63FF;
     --light-grey: #C8C8C8;
     --text-color: #9C9AB6;
+
+    font-size: 1.15vw;
 }
 
 body{
     font-family: 'Poppins';
     background-color: white;
+    
+    display: flex;
+    
 }
 
 main{
@@ -23,21 +28,35 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+
+    margin-top: 11.7rem;
 }
 
 
 h2{
     font-size: 2.25rem;
+    letter-spacing: 0.4rem;
+    font-weight: 700;
+    color: #6C63FF;
 }
 
-#countdown-time{
+#countdown-container{
     display: flex;
     align-items: flex-end;
     font-size: 4.5rem;
+    color: var(--black);
+
+    display: flex;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
 }
 
 .countdown-label{
     font-size: 0.87rem;
+    color: var(--light-grey)
 }
 
 
@@ -47,29 +66,52 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-
-
 
 
 
 p{
     font-size: 0.87rem;
+    color: var(--text-color);
 }
 
 button{
     font-size: 1rem;
+    color:white;
+    background-color: var(--purple);
+    border: none;
+    margin-top: 2rem;
 }
 
+#rocket-img-container{
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
 
 #rocket-img{
     float: right;
-    width: 27.18rem;
+    margin-top: 9.3rem;
+    margin-top: 24vh;
+
+    /*margin-right: 3.75rem;
+    margin-left: 3.75rem;*/
+    
+
+    
+    /*width: 35%;*/
+    width: 70%;
+
+   
 }
 
 #top-img{
     position: fixed;
     z-index: -1;
+    width: 100%;
+    
 }
 
 #bottom-img{
@@ -77,4 +119,5 @@ button{
     z-index: -1;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
